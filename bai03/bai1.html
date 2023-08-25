@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    let number = +prompt("nhap số");
+        //     let count = 0
+        //     for (let k = 0; k <= number; k++) {
+        //         for (i = 2; i <= k; i++) {
+        //             if (k % i == 0) {
+        //                 count++;
+        //             }
+        //         }
+        //         if (count == 1) {
+        //             console.log(`${k} la so nguyen to`);
+        //         }
+        //         count = 0;
+        //     }
+
+        let a = +prompt("nhap  so");
+        let number = 2;
+        do {
+            let soSanh = true;
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    soSanh = false;
+                    break;
+                }
+            }
+            if (soSanh) {
+                console.log(number);
+            }
+            number++;
+        } while (a > number);
+
+    </script>
+</body>
+
+</html>
